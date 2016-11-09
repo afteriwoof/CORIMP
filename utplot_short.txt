@@ -1,0 +1,72 @@
+SSW UTPLOT package			5-Feb-1997, RAS, SDAC/GSFC
+------------------------------------------------------------------------
+PROCEDURES:
+UTHELP, [/LONG]
+	Type summary of UTPLOT routines, or if /LONG option is 
+	specified, type complete explanation of UTPLOT package.
+UTPLOT, X, Y [, 'UTBASE', LABELPAR=LBL, /SAV, TICK_UNIT=TICK, MINORS=MINORS,
+	/NOLABEL, TIMERANGE=TIMERANGE, and all keywords available to plot]
+	Plot X vs Y with UT labels.
+UTPLOT_IO, X, Y [, 'UTBASE', LABELPAR=LBL, /SAV, TICK_UNIT=TICK, MINORS=MINORS,
+	/NOLABEL, TIMERANGE=TIMERANGE and all keywords available to plot]
+	Plot X vs Y semi-log with UT labels.
+	Same arguments as UTPLOT.
+UTPLOT_IO is no longer supported.  Please use UTPLOT, /YTYPE
+SET_UTPLOT, [XRANGE=X, LABELPAR=LBL, UTBASE='BASE', ERROR_RANGE=ERROR_RANGE,
+            ERR_FORMAT=ERR_FORMAT, TICK_UNIT=TICK, MINORS=MINORS,
+	    XSTYLE=XSTYLE]
+SET_UTLABEL, IFLAG 
+	IFLAG = 0/1 means don't/do write start time label on plot.  
+	Default is 1.
+CLEAR_UTPLOT
+	Restores !X... structure to value prior to using UTPLOT with /SAV 
+	option or SET_UTPLOT.
+SETUT, [UTBASE='UTBASE', UTSTART='UTSTART', UTEND='UTEND', ERROR=ERROR,
+       SET_UTPLOT=SET]
+	Set base,start, or end time in common UTCOMMON.  
+GETUT, [UTBASE='BASE', UTSTART='START', UTEND='END', /STRINGIT, /PRINTIT]
+	Retrieve base, start, or end time from common UTCOMMON.  
+GETUTBASE ()
+	Function to retrieve value of utbase in double precision seconds from 
+	common UTCOMMON without having to declare common.
+	RESULT = GETUTBASE()
+SETUTBASE [,'UTBASE', ERROR=ERROR]
+	Set base time.
+	UTBASE - string in YY/MM/DD, HHMM:SS.XXX format to be converted to
+		internal representation and stored in UTCOMMON variable UTBASE.
+	ERROR - 0/1 indicates no error/error in converting UTSTRING
+SETUTSTART [,'UTSTART', ERROR=ERROR]
+	Set start time. See SETUTBASE description.
+SETUTEND [,'UTEND', ERROR=ERROR]
+	Set end time. See SETUTBASE description.
+
+************************************************************************************
+
+TIME CONVERSION ROUTINES:
+
+ANYTIM (INPUT, /INTS, /STC, /_2XN, /EXTERNAL, /UTIME, /SECONDS, or ...)
+	This function is the universal format converter.  See ANYTIM.PRO
+ATIME (UT, [/PUB]) 
+	Function to convert time to ASCII string.
+	UT - Time to convert to string, in double precision seconds since
+		79/1/1, 0000:00.000
+	/PUB - Resulting string will have a colon (:) between hours and minutes
+UTPLOT_UTIME ('UTSTRING')
+	Function to convert ASCII string to double precision seconds since
+		79/1/1, 0000.  If no date is entered, previous date is not
+		'remembered'.  Result is seconds into day.
+	UTSTRING - String containing time in form YY/MM/DD,HHMM:SS.XXX
+	ERROR -	=0/1. If set to 1, there was an error in the ASCII
+		time string.
+OTHER USEFUL CONVERSION ROUTINES:
+TJD2YMD (TJD)
+	Converts from TJD to ANYTIM formats
+YMD2TJD (YMD)
+	Converts ANYTIM formats to TJD
+UT_2_YYDOY (UT)
+	Converts ANYTIM formats to YYDOY
+YYDOY_2_UT (YYDOY)
+	Converts YYDOY to ANYTIM formats
+
+(For a hardcopy of this information, print the file utplot_short.txt
+in the utplot directory, /ssw/gen/idl/utplot.)

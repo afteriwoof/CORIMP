@@ -1,0 +1,172 @@
+SSW UTPLOT package			5-Feb-1997, RAS, SDAC/GSFC
+------------------------------------------------------------------------
+The UTPLOT package draws Universal time tick marks and labels on plots.  
+Time arrays passed to the UTPLOT subroutines should be in a format
+understandable by ANYTIM.PRO.  String formats with two digits for years
+are understood to be in the range from 1-jan-1950 to 31-dec-2049.
+The range of time on a given plot should be greater than 5 milliseconds
+and not extend beyond the two digit year range, 1950-2049.  If the user
+sets a start and/or end time only data between those times will be plotted;
+otherwise the x axis is autoscaled to the start/end of the data. The absolute
+reference of times passed as arrays of seconds are not understood unless
+a reference time, UTBASE, is passed into UTPLOT or is previously set
+by another routine.  Fully referenced times, strings, structures, and
+others (see ANYTIM) are understood completely and require no ancillary
+information.  To set the range of the time axis, the TIMERANGE keyword
+should be used with UTPLOT, using /XSTYLE for an exact range.
+
+
+Internally, the base, start, and end times selected by the user are
+stored in COMMON UTCOMMON,UTBASE,UTSTART,UTEND as double precision
+seconds since 79/1/1, 0000.  The user may set these times by calling the
+SETUT routine with an ASCII string in the format YY/MM/DD,HHMM:SS.XXX;
+SETUT converts the ASCII string to seconds and stores the value in the
+appropriate variable in common UTCOMMON. GETUT retrieves the values of the 
+stored base, start, and end times in either string or seconds format.
+
+ 
+The routine ANYTIM should be
+used as the primary conversion routine for time formats because it
+can recognize all the acceptable input formats autonomously.
+GETUT retrieves the values of the stored base, start, and end
+times in either format.
+
+In the simplest use, the user calls UTPLOT,X,Y and is prompted for a base time. 
+Additional flexibility is available in the call to UTPLOT by using additional
+calling parameters including all of the keywords available to PLOT.
+
+An archaic use with more flexibility is available by calling SET_UTPLOT to set the
+!X... plotting structure variables (tick locations, labels, etc) and then
+calling PLOT with any of its keywords instead of UTPLOT.  Normally the variables
+in the !X... structure associated with the x-axis labeling are saved in a
+temporary location before plotting and restored after plotting so that
+subsequent plots are not affected.  If UTPLOT is called with the /SAV option,
+these !X... variables will remain set so that they can be used by subsequent
+plots.  They can be cleared by calling CLEAR_UTPLOT. 
+
+--------------------------------------------------------------------------
+PROCEDURES:
+UTHELP, [/LONG]
+	Type summary of UTPLOT routines, or if /LONG option is 
+	specified, type complete explanation of UTPLOT package.
+UTPLOT, X, Y [, 'UTBASE', LABELPAR=LBL, /SAV, TICK_UNIT=TICK, MINORS=MINORS,
+	/NOLABEL, TIMERANGE=TIMERANGE and all keywords available to plot]
+	Plot X vs Y with UT labels.
+	X -	X array to plot in seconds relative to base time.
+	Y -	Y array to plot.
+	TIMERANGE - Optional. This can be a two element time range to be
+                plotted.  It can be a string representation or structure.
+	UTBASE - (Optional) ASCII string containing base time for X axis. 
+		Format for time is YY/MM/DD,HHMM:SS.XXX.  If this parameter 
+		isn't present and hasn't been set yet, user is 
+		prompted for base time.
+ 	LBL - 	2 element vector selecting substring from publication format
+	   	of ASCII time (YY/MM/DD, HH:MM:SS.XXX).  For example, 
+	   	LBL=[11,18] would select the HH:MM:SS part of the string.
+	SAV -	If set, UTPLOT labels, tick positions, etc. in !X... system
+		variables will remain set so that they can be used by 
+		subsequent plots (normally !x... structure is saved in 
+		temporary location before plot and restored after plot).  
+		To reset !x... structure, call CLEAR_UTPLOT.
+	TICK -  Distance in seconds between x tick positions.
+	MINORS - Number of minor tick intervals between the x ticks.
+	NOLABEL - If set then the start time won't be written on the plot.
+UTPLOT_IO, X, Y [, 'UTBASE', LABELPAR=LBL, /SAV, TICK_UNIT=TICK, MINORS=MINORS,
+	/NOLABEL, TIMERANGE=TIMERANGE and all keywords available to plot]
+	Plot X vs Y semi-log with UT labels.
+	Same arguments as UTPLOT.
+UTPLOT_IO is no longer supported.  Please use UTPLOT, /YTYPE
+SET_UTPLOT, [XRANGE=X, LABELPAR=LBL, UTBASE='BASE', ERROR_RANGE=ERROR_RANGE,
+            ERR_FORMAT=ERR_FORMAT, TICK_UNIT=TICK, MINORS=MINORS,
+	    XSTYLE=XSTYLE]
+	Prepares IDL system variables (!X.CRANGE, !X.TICKV, !X.TICKNAME, 
+	and !X.TICKNAME) for plotting X vs Y with Universal time labels 
+	After calling SET_UTPLOT, user calls the standard IDL PLOT routine 
+	to draw the plot. SET_UTPLOT is normally called by UTPLOT, and 
+	is transparent to the user.
+	X - 	X array to plot (seconds relative to base time).
+	LBL - 	2 element vector selecting substring from publication format
+	   	of ASCII time (YY/MM/DD, HH:MM:SS.XXX).  For example, 
+	   	LBL=[11,18] would select the HH:MM:SS part of the string.
+	BASE - 	ASCII string containing base time for X axis. Format for
+	   	time is YY/MM/DD,HHMM:SS.XXX.  If this parameter isn't present
+          	and hasn't been set yet, user is prompted for base time.
+	ERROR_RANGE - = 0/1. If set to 1, the X array is outside of the
+	   	limits defined by start and end times selected by user.
+	ERR_FORMAT - = 0/1. If set to 1, there was an error in the ASCII time
+	   	format for the base time.
+	TICK -  Distance in seconds between x tick positions.
+	MINORS - Number of minor tick intervals between the x ticks.
+	XSTYLE - Usual meaning for PLOT.  /XSTYLE forces exact x-axis range.
+SET_UTLABEL, IFLAG 
+	IFLAG = 0/1 means don't/do write start time label on plot.  
+	Default is 1.
+CLEAR_UTPLOT
+	Restores !X... structure to value prior to using UTPLOT with /SAV 
+	option or SET_UTPLOT.
+SETUT, [UTBASE='UTBASE', UTSTART='UTSTART', UTEND='UTEND', ERROR=ERROR,
+       SET_UTPLOT=SET]
+	Set base,start, or end time in common UTCOMMON.  
+	BASE, START, or END - ASCII string in format YY/MM/DD,HHMM:SS.XXX.
+		Partial strings are allowed.  If the date is omitted, the 
+		last date passed (for base, start, or end time) is used.
+		e.g. if '88/3/4,1230' had already been passed:
+		'1200'      means 88/3/4,1200
+		'01'        means 88/3/4,0001 (1 minute into the day)
+		'01:2'      means 88/3/4,0001:02.000 (1 min., 2 sec into day)
+		'1200:20.1' means 88/3/4,1200:20.100 (20.100 sec. after 12)
+	ERROR - 0/1 indicates no error/error in converting ASCII time to 
+	   double precision seconds.
+	SET - 0/1 indicates no call/call to SET_UTPLOT.  Value remembered.
+GETUT, [UTBASE='BASE', UTSTART='START', UTEND='END', /STRINGIT, /PRINTIT]
+	Retrieve base, start, or end time from common UTCOMMON.  
+	BASE, START, END - keyword parameters select which time(s) to retrieve,
+		times returned are double precision seconds relative to 
+		79/1/1, 0000 or string if /STRINGIT is specified
+	/STRINGIT - return times in strings with format YY/MM/DD, HHMM:SS.XXX 
+	/PRINT - print times on the terminal (prints all three if none are 
+		specified)
+GETUTBASE ()
+	Function to retrieve value of utbase in double precision seconds from 
+	common UTCOMMON without having to declare common.
+	RESULT = GETUTBASE()
+SETUTBASE [,'UTBASE', ERROR=ERROR]
+	Set base time.
+	UTBASE - string in YY/MM/DD, HHMM:SS.XXX format to be converted to
+		internal representation and stored in UTCOMMON variable UTBASE.
+	ERROR - 0/1 indicates no error/error in converting UTSTRING
+SETUTSTART [,'UTSTART', ERROR=ERROR]
+	Set start time. See SETUTBASE description.
+SETUTEND [,'UTEND', ERROR=ERROR]
+	Set end time. See SETUTBASE description.
+
+************************************************************************************
+
+TIME CONVERSION ROUTINES:
+
+ANYTIM (INPUT, /INTS, /STC, /_2XN, /EXTERNAL, /UTIME, /SECONDS, or ...)
+	This function is the universal format converter.  See ANYTIM.PRO
+ATIME (UT, [/PUB]) 
+	Function to convert time to ASCII string.
+	UT - Time to convert to string, in double precision seconds since
+		79/1/1, 0000:00.000
+	/PUB - Resulting string will have a colon (:) between hours and minutes
+UTPLOT_UTIME ('UTSTRING')
+	Function to convert ASCII string to double precision seconds since
+		79/1/1, 0000.  If no date is entered, previous date is not
+		'remembered'.  Result is seconds into day.
+	UTSTRING - String containing time in form YY/MM/DD,HHMM:SS.XXX
+	ERROR -	=0/1. If set to 1, there was an error in the ASCII
+		time string.
+OTHER USEFUL CONVERSION ROUTINES:
+TJD2YMD (TJD)
+	Converts from TJD to ANYTIM formats
+YMD2TJD (YMD)
+	Converts ANYTIM formats to TJD
+UT_2_YYDOY (UT)
+	Converts ANYTIM formats to YYDOY
+YYDOY_2_UT (YYDOY)
+	Converts YYDOY to ANYTIM formats
+
+(For a hardcopy of this information, print the file utplot_long.txt
+in the utplot directory, /ssw/gen/idl/utplot.)

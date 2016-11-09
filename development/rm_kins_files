@@ -1,0 +1,11 @@
+#!/bin/sh
+
+rm -rf ~/Postdoc_largefiles/detections_dublin/2011/*/*/*xml
+rm -rf ~/Postdoc_largefiles/detections_dublin/2011/*/*/cme_kins_plots
+rm -rf ~/Postdoc_largefiles/detections_dublin/2011/*/*/cme_pngs*
+rm -rf ~/Postdoc_largefiles/detections_dublin/2011/*/*/pa_total*
+rm -rf ~/Postdoc_largefiles/detections_dublin/2011/*/*/cme_profs
+rm -rf ~/Postdoc_largefiles/detections_dublin/2011/*/*/cme_kins_plots
+rm -rf ~/Postdoc_largefiles/detections_dublin/2011/*/*/det_info*
+rm -rf ~/Postdoc_largefiles/detections_dublin/2011/*/*/rm_date*
+

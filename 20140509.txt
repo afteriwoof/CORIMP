@@ -1,0 +1,409 @@
+; IDL Version 7.1.1 (linux x86_64 m64)
+; Journal File for jbyrne@gail
+; Working directory: /home/gail/jbyrne/work_on_gail
+; Date: Fri May  9 10:23:59 2014
+ 
+@idl_startup.b
+lasco_realtime_jpb,'2014/05/09',/daily
+; % LASCO_REALTIME_JPB: Incorrect number of arguments.
+lasco_realtime_jpb,startdate='2014/05/09',/daily
+;***
+;i        0
+;***
+;Current time is 2014/05/09 20:24:50
+;Downloaded new files 
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530025.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530024.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530023.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530022.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530021.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530020.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530019.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530018.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530017.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530016.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530015.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530014.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530013.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530012.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530011.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530010.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530009.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530008.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530007.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530006.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530005.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530004.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530003.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530002.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530001.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23530000.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529999.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529998.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529997.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529996.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529995.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529994.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529993.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529992.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529991.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529990.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529989.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529988.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529987.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529986.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529985.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529984.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529983.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529982.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529980.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529979.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529978.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529976.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529975.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529974.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529973.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529972.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529971.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529970.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529969.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529968.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529967.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529966.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529965.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529964.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529963.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529962.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529961.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529960.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529959.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529958.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529957.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529956.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529955.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529954.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529953.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529952.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529951.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529950.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529949.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529948.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529947.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529946.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529945.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529944.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529943.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529942.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529941.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529940.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529939.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529938.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529937.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529908.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529907.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529906.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529905.fts
+;/home/gail/jbyrne/soho/lasco/lastimage/level_05/140509/c2/23529904.fts
+;***
+;startdate: 2014/05/09
+;tstart: 2014/05/08
+;tend: 2014/05/09
+;***
+;Searching for files...
+;         140 files found within date range
+;Reading headers...
+;      0.00000 out of          140
+;Restoring /volumes/data/solarsoft/ssw/soho/lasco/idl/data/calib/c2_c3_last_post_recovery_day.sav
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;      100.000 out of          140
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;CNTR/ROLL not corrected; only available thru 2013-12-01.
+;Just using header values - adjust_hdr_tcr did not work!!!
+;         123 appropriate files found
+;Testing block       1.00000 out of       1.00000
+;Deleting existing file  /home/gail/jbyrne/realtime/soho/lasco/bg_av_st/c2lasco_bg_av_st_20140507170006_187.dat
+;/home/gail/jbyrne/realtime/soho/lasco/bg_av_st/c2lasco_bg_av_st_20140508170006_187.dat
+;, will reprocess
+;Deleting existing file  /home/gail/jbyrne/realtime/soho/lasco/bg_av_st/c2lasco_bg_av_st_20140508170006_187.dat
+;, will reprocess
+;      1.00000 chunks out of            2. Reading       61.0000files
+;      0.00000 out of       60.0000
+; % FREE_LUN: Reserved file cannot be closed in this manner. Unit: 100, File: 20140509.txt
+which,'free_all_lun
+;/volumes/work/progs2009/general/free_all_lun.pro

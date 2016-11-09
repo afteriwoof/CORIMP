@@ -1,0 +1,42 @@
+scp Postdoc/Automation/Catalogue/run_automated_new.pro jbyrne@gail:work_on_gail/
+
+scp Postdoc/Automation/Catalogue/change_cme_masks.pro jbyrne@gail:work_on_gail/
+
+scp Postdoc/Automation/Catalogue/cme_detection_mask_corimp_dynamic_thr.pro jbyrne@gail:work_on_gail/
+
+scp Postdoc/Automation/Catalogue/cme_mask_inds.pro jbyrne@gail:work_on_gail/
+
+scp idl_codes/ellipsefit.pro jbyrne@gail:work_on_gail/
+
+scp idl_codes/ellipse_mpfit_corimp.pro jbyrne@gail:work_on_gail/
+
+scp idl_codes/findlocalmaxima.pro jbyrne@gail:work_on_gail/
+
+scp Postdoc/Automation/Catalogue/find_outer_peak_edges_new.pro jbyrne@gail:work_on_gail/
+
+scp idl_codes/medabsdev.pro jbyrne@gail:work_on_gail/
+
+scp idl_codes/non_zero_front.pro jbyrne@gail:work_on_gail/
+
+scp idl_codes/polar.pro  jbyrne@gail:work_on_gail/
+
+scp idl_codes/reflect_inner_outer.pro jbyrne@gail:work_on_gail/
+
+scp idl_codes/rm_inner_corimp.pro jbyrne@gail:work_on_gail/
+
+scp idl_codes/rm_outer_corimp.pro jbyrne@gail:work_on_gail/
+
+scp Postdoc/Automation/Catalogue/run_automated2_new.pro jbyrne@gail:work_on_gail/
+
+scp Postdoc/Automation/Catalogue/run_automated_new.pro jbyrne@gail:work_on_gail/
+
+scp idl_codes/sort_fls.pro jbyrne@gail:work_on_gail/
+
+scp Postdoc/Automation/Catalogue/temp_cme_mask_str.pro jbyrne@gail:work_on_gail/
+
+scp Postdoc/Automation/Catalogue/test_contour_thresholds.pro jbyrne@gail:work_on_gail/
+
+scp idl_codes/wtmm.pro jbyrne@gail:work_on_gail/
+
+scp idl_codes/filename2date.pro jbyrne@gail:work_on_gail/
+
